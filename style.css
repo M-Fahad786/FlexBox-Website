@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  background: #fafafa;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: #333;
+  display: inline-block;
+}
+
+li a::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #333;
+  transition: all 0.5s;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  height: calc(100vh - 100px);
+}
+
+.img {
+  max-width: 670px;
+  height: auto;
+}
+
+.container-left {
+  width: 30%;
+}
+
+main h1 {
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #133b45;
+}
+
+main h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fca70c;
+  letter-spacing: 8px;
+}
+
+main p {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #333;
+  margin: 30px 0;
+}
+
+.learn {
+  padding: 15px 30px;
+  background: #c4c4f7;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.learn:hover {
+  background: #133b45;
+}
+
+.sign-up {
+  padding: 10px 30px;
+  background: #c4c4f7;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+}
